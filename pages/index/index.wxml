@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <navigator url="../multiCharts/index" class="nav-text">跳转到地图</navigator>
+  <button bindtap="ToTest" type="primary">实例测试</button>
+</view>-->
+
+
+<!-- 下拉菜单 -->
+    <view class='menu-po'>
+        <!-- 导航栏 -->
+        <view class='menu'>
+            <view class='menu-list'>
+                <view class='menu-nav' wx:for="{{ msgList }}" wx:for-index="idx" wx:key="key" data-hi="{{ idx }}"            bindtap="menuClick">
+                    <text class='menu-text'>{{ item.name }}</text>
+                    <image class='menu-image' src='/images/23570.jpg'></image>
+                </view>
+            </view>
+        </view>
+        <!-- 列表栏 -->
+        <view class='menu-if'>
+
+            <view class="meun-txt over-auto" hidden='{{ meunShow[0].isShows ? true : false }}' >
+                <text class='meun-city-txt meun-city-txt-price' wx:for="{{ gongzuodi }}" wx:key="id" bindtap = "choseGZD" data-price="{{item.name}}" >{{ item.name }}</text>
+            </view>  
+
+            <view class="meun-txt over-auto" hidden='{{ meunShow[1].isShows ? true : false }}' >
+                <text wx:for="{{ shengyuandi }}" wx:key="id" class='meun-city-txt meun-city-txt-price' bindtap = "choseSYD" data-price="{{item.name}}">{{ item.name }}</text>
+            </view>
+
+            <view class="meun-txt over-auto" hidden='{{ meunShow[2].isShows ? true : false }}'>
+                <text class='meun-city-txt meun-city-txt-price' wx:for="{{ ruxuenian }}" wx:key="id" bindtap = "choseRXN" data-price="{{item.name}}">{{ item.name }}</text>
+            </view>
+
+            <view class="meun-txt over-auto" hidden='{{ meunShow[3].isShows ? true : false }}'>
+                <text class='meun-city-txt meun-city-txt-price' wx:for="{{ xueli }}" wx:key="id" bindtap = "choseXL" data-price="{{item.name}}">{{ item.name }}</text>
+            </view>
+
+             <view class="meun-txt over-auto" hidden='{{ meunShow[4].isShows ? true : false }}'>
+                <text class='meun-city-txt meun-city-txt-price' wx:for="{{ zhuanye }}" wx:key="id" bindtap = "choseZY" data-price="{{item.name}}">{{ item.name }}</text>
+            </view>
+
+           <view class="meun-txt over-auto" hidden='{{ meunShow[5].isShows ? true : false }}'>
+                <text class='meun-city-txt meun-city-txt-price' wx:for="{{ hangye }}" wx:key="id" bindtap = "choseHY" data-price="{{item.name}}">{{ item.name }}</text>
+            </view>
+        </view>
+
+ <view class = "imagesize">
+  <image src="../../images/Chinamap.png" mode="widthFix"></image >
+</view>
+<button class='btn1' open-type='primary' bindtap = "search">
+    <view>点击查看院友信息</view>
+ </button>
+
+<!--<button  open-type='primary' bindtap = "ToZhuye">
+    <view>测试主页</view>
+ </button>-->
+    </view> 
+ <view class='search_text'> 
+    <text decode="{{true}}">已选工作地：{{p_GZD}} \n</text>
+    <text decode="{{true}}"> \n </text>
+    <text decode="{{true}}">已选生源地：{{p_SYD}}\n</text>
+    <text decode="{{true}}"> \n </text>
+    <text decode="{{true}}">已选入学年：{{p_RXN}}\n</text>
+    <text decode="{{true}}"> \n </text>
+    <text decode="{{true}}">已选专   &nbsp; 业：{{p_ZY}}\n</text>
+    <text decode="{{true}}"> \n </text>
+    <text decode="{{true}}">已选学   &nbsp; 历：{{p_XL}}\n</text>
+    <text decode="{{true}}"> \n </text>
+    <text decode="{{true}}">已选行   &nbsp; 业：{{p_HY}}\n</text>
+ </view>

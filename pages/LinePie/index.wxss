@@ -1,0 +1,17 @@
+/* pages/LinePie/index.wxss */
+
+#mychart-dom-multi-pie {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+}
+
+#mychart-dom-multi-line {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

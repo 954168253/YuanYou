@@ -1,0 +1,9 @@
+/* pages/GradesNumber/index.wxss */
+/**index.wxss**/
+#mychart-dom-line {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+}

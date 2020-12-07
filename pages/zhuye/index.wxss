@@ -1,0 +1,35 @@
+/* pages/zhuye/index.wxss */
+.logo{
+ justify-content: center ;
+ display: flex;
+ margin-top: 20rpx; 
+ margin-bottom: 20rpx;
+}
+.swiper {
+    height: 500.5rpx;
+}
+.swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 400rpx;
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 100%;
+}
+.btn1 {
+  width: 80%;
+  margin-top: 100rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+<!--pages/manCard/index.wxml-->
+<view class="content">
+  <button bindtap="getBenkesheng" type="primary" class = 'xuelibutton'>本科</button>
+  <button bindtap="getYanjiusheng" type="primary" class = 'xuelibutton'>研究生console</button>
+  <button bindtap="getBoshisheng" type="primary" class = 'xuelibutton'>博士</button>
+</view>
+
+<view wx:for="{{data}}" wx:key="name" class ="man-card">
+  <image src="../../images/man.png" class='img' ></image >
+  <!--<text> {{index+1}}: {{item.name}},{{item.year}},{{item.sum}},{{item.percent}}</text>-->
+  <view class = "txtlist">
+    <text decode="{{true}}" class = "ttt">姓名 : {{item.name}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 年级 : {{item.year}}</text>
+    <text decode="{{true}}" class = "ttt">人数 : {{item.sum}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息完整度 : {{item.percent}} %</text>
+  </view>
+</view>
+
+

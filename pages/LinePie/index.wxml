@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-pie" canvas-id="mychart-multi-pie" ec="{{ ecPie }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-multi-line" canvas-id="mychart-multi-line" ec="{{ ecLine }}" bind:init="echartInit"></ec-canvas>
+</view>
