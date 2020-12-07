@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/zhuye/index",
+    "pages/index/index",
+    "pages/multiCharts/index",
+    "pages/manCard/index",
+    "pages/UserManage/index",
+    "pages/GradesNumber/index",
+    "pages/test/index",
+    "pages/test2/index",
+    "pages/test3/index",
+    "pages/BarPie/index",
+    "pages/BarLine/index",
+    "pages/LinePie/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9BCD9B",
+    "navigationBarTitleText": "院友信息管理与分析平台",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+
+}
